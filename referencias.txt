@@ -1,0 +1,13 @@
+Usar copia de la tabla 2 de posgreSQL
+
+buscar (views.py)
+	GET name="diag" de form /buscar/ en busqueda_dx.html 
+	
+	render--> resultados_busqueda.html
+		context={
+			"codigo":codigo, #codigo = QuerySet : búsqueda asociada a prod
+			"query":prod, filtro de coincidencias entre query y producto
+			"producto":producto #palabra buscada en el GET = diag
+			}
+
+ 
